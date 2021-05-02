@@ -7,9 +7,7 @@ class Student {
     addAnswer(question) {
 
         this.answers.push(question);
-
-       
-    }
+   }
 
     getid(){
       return this.id;
@@ -55,11 +53,8 @@ let count=0;
 for (let id in this.questions){
 
 let studentanswer=studentfiler[id]; 
-
 let correctanswer=this.questions.find(c=>c.id==studentanswer.id);
-
-  let answercheck=studentanswer.answer;
- 
+ let answercheck=studentanswer.answer;
   count+=correctanswer.checkAnswer(answercheck);
 
 }
